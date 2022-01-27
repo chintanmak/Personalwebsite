@@ -1,0 +1,282 @@
+// mobile view
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    
+
+    // Navbar css
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        // border: 1px solid black;
+        justify-content: center;        
+        .navbar-logo{
+            a{
+                // border: 1px black solid;
+                font-size: 3rem;
+                text-decoration: none;
+            }
+            
+        }
+        .navbar-menu{
+            display: flex;
+            padding-top: 1rem;
+            gap: 2rem;
+            a {
+                
+                text-decoration: none;
+                font-size: 1.5rem;    
+                // padding: 1rem;
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+
+
+    // home section css
+    .home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+        .left-container{
+            text-align: center;
+            // border-right: 1px black solid ;
+            padding-right: 2rem ;
+            margin-left: 2rem;
+
+            .photo{
+                margin-top: 2rem;
+                img{
+                    height: 20rem;
+                    width: 20rem;
+                }
+
+                .info{
+                    p{
+                        text-align: center;
+                        font-size: 1rem;
+                        font-style: normal;
+                        font-weight: lighter;
+
+                    }
+                }
+            }
+            .fa-div {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .fa {
+                font-size: 1.5rem;
+                text-align: center;
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        .right-container{
+            // margin-left: 4rem;
+            
+            // align-items: center;
+            .Summary{
+                h1{
+                    text-align: center;
+                    font-size: 2.5rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+                h2{
+                    font-size: 1.3rem;
+                }
+                .box{
+                    display: grid;
+                    grid-template-columns: auto;
+                    gap: 2rem;
+                    .e-box{
+                        height: fit-content;
+                        width: 80%;
+                        border: 1px black solid;
+                        padding: 1rem;    
+                    }
+                }
+                .pbox{
+                    display: grid;
+                    grid-template-columns: auto;
+                    gap: 2rem; 
+                    .p-box{
+                        height: fit-content;
+                        width: 80%;
+                        border: 1px black solid;
+                        padding: 1rem;    
+                    }
+                }
+                }
+            }
+    }
+
+       // Contactus css
+       .container{
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+    
+        .form-div{
+            text-align: center;
+            font-size: 1.2rem;
+    
+            .btn-block{
+                border: 2px solid;
+                font-size: 1.5rem;
+            }
+            
+        }
+    }
+
+    // rights css
+
+    .rights{
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+
+// web view
+@media screen and (min-width: 769px) {
+    
+
+    // Navbar css
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem;
+        
+        .navbar-logo{
+            a{
+
+                font-size: 3rem;
+                text-decoration: none;
+            }
+            
+        }
+        .navbar-menu{
+            padding-top: 1rem;
+            a {
+                text-decoration: none;
+                font-size: 2rem;    
+                padding: 1rem;
+                // border: 1px solid black;
+            }
+        }
+    }
+
+
+    // home section css
+    .home-container{
+    display: flex;
+    flex-direction: row;
+
+        .left-container{
+            border-right: 1px black solid ;
+            padding-right: 2rem ;
+            margin-left: 2rem;
+
+            .photo{
+                margin-top: 2rem;
+                img{
+                    height: 22rem;
+                    width: 22rem;
+                }
+
+                .info{
+                    p{
+                        text-align: center;
+                        font-size: 1.5rem;
+                        font-style: normal;
+                        font-weight: lighter;
+                    }
+                }
+            }
+            .fa-div {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .fa {
+                font-size: 1.5rem;
+                text-align: center;
+                text-decoration: none;
+                color: black;
+            }
+    
+            .fa:hover {
+                opacity: 0.6;
+            }
+        }
+
+        .right-container{
+            margin-left: 4rem;
+            .Summary{
+                h1{
+                    font-size: 2.5rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+                h2{
+                    font-size: 1.3rem;
+                }
+                .box{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    gap: 2rem;
+                    .e-box{
+                        height: fit-content;
+                        width: 20rem;
+                        border: 1px black solid;
+                        padding: 1rem;    
+                    }
+                }
+                .pbox{
+                    display: grid;
+                    grid-template-columns: auto;
+                    gap: 2rem; 
+                    .p-box{
+                        height: fit-content;
+                        width: 40rem;
+                        border: 1px black solid;
+                        padding: 1rem;    
+                    }
+                }
+                }
+            }
+    }
+
+    // Contactus css
+    .container{
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+    
+        .form-div{
+            text-align: center;
+            font-size: 1.5rem;
+    
+            .btn-block{
+                border: 2px solid;
+                font-size: 1.5rem;
+            }
+            
+        }
+    }
+
+        // rights css
+
+        .rights{
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+}
