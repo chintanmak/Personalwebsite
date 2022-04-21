@@ -15,7 +15,7 @@ const Navbar=()=> {
             </div>
 
             <div className='navbar-menu'>
-                <a href="/Contact" className='btn-contact'>Contact Me</a>
+                
                 
                 <a href={resume} className='btn-contact'>Resume</a>
             </div>

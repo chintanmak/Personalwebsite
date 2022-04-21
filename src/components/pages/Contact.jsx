@@ -8,7 +8,8 @@ class Contact extends Component {
         this.state ={
             fullName:'',
             email:'',
-            phone:'' 
+            phone:'' ,
+            data:[]
         }
         this.changeFullName = this.changeFullName.bind(this)
         this.changeEmail = this.changeEmail.bind(this)
@@ -46,7 +47,8 @@ class Contact extends Component {
 try{
 
    await axios.post('http://localhost:4000/app/signup', registered)
-    .then(response => console.log(response.data))
+    .then(response => console.log(response.data));
+    this.getData();
     
 }catch(err){
     console.log(err)
@@ -57,6 +59,27 @@ try{
             phone:''
         })
     }
+
+
+
+
+    getData=async()=>{
+        
+        try{
+            const data = await axios.get('http://localhost:4000/app/get-all-data');
+            console.log(data.data);
+            this.setState({
+            data:data.data
+            })
+        }catch(err){
+            console.log(err);
+        }
+    }
+
+componentDidMount() {
+    this.getData();
+}
+
     render(){
         return(
             <>
@@ -94,6 +117,25 @@ try{
                             />
                         </form>    
 
+                    <div>
+                    {
+                        this.state.data.length>0?
+                        this.state.data.map(item=>(
+                            <>
+
+                            <h4>
+                                {item.fullName} {'-'} {item.email} {'-'} {item.date.substr(0,10)}
+                            </h4>
+                            
+                            </>
+
+                        ))
+                        : 
+                       <h1>No data</h1>
+                    }
+
+
+                    </div>
                                 
 
                     </div>
