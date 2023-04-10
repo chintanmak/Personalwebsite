@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from './components/Navbar';    
-import Contact from './components/pages/Contact';
+import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
 
 
@@ -14,9 +13,6 @@ export default function App(){
   <Routes>
     <Route path="/" element={<Navbar />}>
       <Route index element={<Home />} />
-      <Route path="/Contact" element={<Contact />} />
-
-     
 
     </Route>
   </Routes>

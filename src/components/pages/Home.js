@@ -50,21 +50,22 @@ function Home() {
            <div className='right-container'>
                 <div className='Summary'>
                     <h1>Summary</h1>
-                    <p>Hello i am chintan makwana </p>
+                    <p>Experienced Associate Software Developer with a demonstrated history of working in the IT industry. Skilled in HTML, CSS, SCSS, Javascript, Reactjs, Mongodb. Strong engineering professional with a Master's degree focused in Computer Science from MIT World Peace University.</p>
                     <br />
 
                     <h1>Experiences</h1>
                     <div className='box'>
+                    
+                    <div className='e-box'>
+                    <h2> Trejhara Solutions</h2>
+                    <p>Engineer</p>
+                    <p>oct-2022 - current</p>
+                    </div>
 
                     <div className='e-box'>
                     <h2> HACK-X Security</h2>
                     <p>Software Developer intern</p>
-                    <p>nov-2021 - current</p>
-                    </div>
-                    <div className='e-box'>
-                    <h2> Trinity Gaming India</h2>
-                    <p>Social Media Marketing</p>
-                    <p>Dec-2019 - Apr-2020</p>
+                    <p>nov-2021 - july-2022</p>
                     </div>
 
                     <div className='e-box'>
@@ -72,6 +73,7 @@ function Home() {
                     <p>Website Developer</p>
                     <p>Feb-2019 - Jun-2019</p>
                     </div>
+
                     <div className='e-box'>
                     <h2> Global Web Desk</h2>
                     <p>Website Developer and Blogger</p>

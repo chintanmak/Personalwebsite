@@ -1,7 +1,6 @@
 import React from 'react'
 import './style.scss';
 import { Outlet } from 'react-router-dom';
-import Contact from './pages/Contact';
 import resume from './assets/resume.pdf';
 import Home from './pages/Home';
 
@@ -15,8 +14,6 @@ const Navbar=()=> {
             </div>
 
             <div className='navbar-menu'>
-                
-                
                 <a href={resume} className='btn-contact'>Resume</a>
             </div>
         
